@@ -1,0 +1,5 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/home/z/.cache/pacaur/adwaita-dark'
+let g:netrw_dirhist_2='/home/z/1learn/lectures2/src/term1-algebra'
+let g:netrw_dirhist_3='/home/z/1learn/lectures/src/term1-analysis'

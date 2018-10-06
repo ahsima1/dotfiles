@@ -1,0 +1,10 @@
+alias spman="sudo pacman"
+alias sctl=systemctl
+alias sush="sudo zsh"
+alias hd="hexdump -C"
+alias jwine="LC_ALL=ja_JP.utf8 wine"
+alias wine32="WINEPREFIX=~/.wine32 WINEARCH=win32 wine"
+alias maek="make"
+alias neofetch="neofetch_a"
+alias myip="dig +short myip.opendns.com @resolver1.opendns.com"
+alias pixiv-dl="gallery-dl -u 'PIXIV_LOGIN' -p 'PIXI_PWD' -d ."

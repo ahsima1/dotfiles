@@ -1,0 +1,7 @@
+#!/bin/bash
+
+while true;
+do
+xsetroot -name "`acpi | cut -d, -f 2` | `date`"
+sleep 1
+done

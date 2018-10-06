@@ -1,0 +1,4 @@
+#!/bin/bash
+arr=(EN RU)
+echo ${arr[$(dbus-send --print-reply=literal --dest=ru.gentoo.KbddService /ru/gentoo/KbddService ru.gentoo.kbdd.getCurrentLayout | tail -c 2)]}
+

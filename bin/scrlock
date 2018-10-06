@@ -1,0 +1,16 @@
+#!/bin/sh
+revert(){
+  xset dpms 600 600 1200
+}
+trap revet HUP INT TERM
+lang=$(dbus-send --print-reply=literal --dest=ru.gentoo.KbddService\
+    /ru/gentoo/KbddService ru.gentoo.kbdd.getCurrentLayout 2>/dev/null |\
+    sed -un 's/^.*uint32 //p')
+dbus-send --dest=ru.gentoo.KbddService /ru/gentoo/KbddService\
+	ru.gentoo.kbdd.set_layout uint32:0
+xset +dpms dpms 5 5 5
+i3lock -n -i ~/.bin/lock.png
+dbus-send --dest=ru.gentoo.KbddService /ru/gentoo/KbddService\
+	ru.gentoo.kbdd.set_layout uint32:$lang
+revert
+

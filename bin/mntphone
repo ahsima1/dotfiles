@@ -1,0 +1,2 @@
+#!/bin/bash
+sshfs $1:/storage/emulated/0 $2 -p 8022

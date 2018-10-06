@@ -1,0 +1,3 @@
+#!/bin/bash
+sudo ip link set wlp3s0 down
+sudo systemctl start netctl-auto@wlp3s0.service

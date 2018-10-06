@@ -1,0 +1,4 @@
+sudo ip link set enp2s0 down
+sudo modprobe -r rtsx_usb_sdmmc
+sudo modprobe -r rtsx_usb_ms
+sudo modprobe -r rtsx_usb
